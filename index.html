@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Message</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li>
+            <a href=""></a>
+          </li>
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!-- Just provide the number of characters you want to type and it will restrict you to type beyond that !!! -->
+        <h2> Twitter Message</h2>
+        <div class="button-container">
+          <div class="ui form">
+            <div class="field">
+              <!-- Instead of maxlength property to restrict the content of textarea using string slice function. 
+                maxlength="300" to text.slice(0,300)
+              -->
+              <textarea placeholder='Write your message' rows="10" cols="50" id="text"></textarea>
+              <h2 id="message"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- javascript -->
+    <script src="message.js"></script>
+  </body>
+</html>
